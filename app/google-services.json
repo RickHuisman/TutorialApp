@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "455220149435-2fahtemnsdo7ekpstoivaq0botgrugta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rickh.tutorialapp",
+            "certificate_hash": "22b232979763eb94c2ef45b10c536aa098936389"
+          }
+        },
+        {
           "client_id": "455220149435-6hscf632o74hlusonf64r5ke5tl89kq7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

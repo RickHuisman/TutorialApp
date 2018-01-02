@@ -30,7 +30,7 @@ public class SectionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sections);
 
-        SectionLV = (ListView)findViewById(R.id.SectionsLV);
+        /*SectionLV = (ListView)findViewById(R.id.SectionsLV);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, ListSections);
         SectionLV.setAdapter(adapter);
 
@@ -41,15 +41,20 @@ public class SectionsActivity extends AppCompatActivity {
                 Set<String> set = new HashSet<String>();
                 Iterator i = dataSnapshot.getChildren().iterator();
 
-                while (i.hasNext()) {
-                    set.add((DataSnapshot)i.next());
+                while (i.hasNext()){
+                    set.add(((DataSnapshot)i.next()).getKey());
                 }
+
+                ListSections.clear();
+                ListSections.addAll(set);
+
+                adapter.notifyDataSetChanged();
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        });*/
     }
 }
